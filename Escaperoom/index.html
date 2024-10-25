@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Misión en el Museo del Tiempo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Start Screen -->
+        <div id="start-screen">
+            <h1>La Misión en el Museo del Tiempo</h1>
+            <p>¡Resuelve los acertijos y recupera las piezas de la máquina del tiempo para escapar!</p>
+            <button id="start-button">Empezar</button>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" style="display: none;">
+            <h2 id="room-title"></h2>
+            <p id="room-description"></p>
+            <img id="room-image" src="" alt="Imagen de la Sala" />
+            <input type="text" id="answer-input" placeholder="Escribe tu respuesta aquí">
+            <button id="submit-answer">Enviar</button>
+            <p id="hint" class="hint-button">¿Necesitas ayuda? Haz clic aquí</p>
+            <div id="hint-content" style="display: none;"></div>
+        </div>
+
+        <!-- End Screen -->
+        <div id="end-screen" style="display: none;">
+            <h1>¡Felicidades!</h1>
+            <p>Has completado la máquina del tiempo y escapado del museo.</p>
+            <img src="images/timemachine.png" alt="Máquina del Tiempo Completa" />
+            <button id="restart-button">Jugar de Nuevo</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
